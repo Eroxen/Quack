@@ -23,7 +23,7 @@ Quack has several function you can call under `/function quack:api/*`. Functions
 > [!IMPORTANT]
 > Before you can use Quack you need to set up the required scoreboards, which can be done by `/function quack:api/create_scoreboards`. You may want to add this function to `#minecraft:load`, but Quack does not do so by default so that you can choose for yourself.
 
-You can use either numbers in scoreboards (`/function quack:api/scoreboard/*`) or data storage (`/function quack:api/storage/*`) as inputs and outputs for Quack. The storage functions are simply wrappers that call the scoreboard function.
+You can use either numbers in scoreboards (`/function quack:api/scoreboard/*`) or data storage (`/function quack:api/storage/*`) as inputs and outputs for Quack. The storage functions are simply wrappers that call the scoreboard function, so using the scoreboard variant can be _slightly_ faster.
 
 ### Euler -> Quaternion
 
