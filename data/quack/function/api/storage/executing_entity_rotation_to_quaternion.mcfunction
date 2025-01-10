@@ -12,5 +12,3 @@
 data modify storage quack:api euler set from entity @s Rotation
 data modify storage quack:api euler append value 0f
 function quack:api/storage/pitch_yaw_to_quaternion
-
-# tellraw @s {"text": "quaternion: ", "extra": [{"storage": "quack:api", "nbt": "quaternion"}]}

@@ -6,7 +6,7 @@
 # significantly simplify the math.
 #####################################################################
 
-function quack:internal/euler/get_sin_cos_of_all
+function quack:internal/euler/get_sin_cos_of_pitch_yaw
 
 scoreboard players operation quaternion.x quack = #internal.euler.cos_yaw quack
 scoreboard players operation quaternion.x quack *= #internal.euler.sin_pitch quack

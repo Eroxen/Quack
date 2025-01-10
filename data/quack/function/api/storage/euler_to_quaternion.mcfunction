@@ -25,5 +25,3 @@ execute store result storage quack:api quaternion[0] float 0.0000305175781250000
 execute store result storage quack:api quaternion[1] float 0.00003051757812500000 run scoreboard players get quaternion.y quack
 execute store result storage quack:api quaternion[2] float 0.00003051757812500000 run scoreboard players get quaternion.z quack
 execute store result storage quack:api quaternion[3] float 0.00003051757812500000 run scoreboard players get quaternion.w quack
-
-# tellraw @p {"text": "quaternion: ", "extra": [{"storage": "quack:api", "nbt": "quaternion"}]}

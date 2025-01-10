@@ -1,0 +1,2 @@
+execute as ccb5aac3-b7fb-0e79-7b9e-6a0639fc6f93 at @s unless loaded ~ ~ ~ run kill @s
+execute unless entity ccb5aac3-b7fb-0e79-7b9e-6a0639fc6f93 run summon marker ~ ~ ~ {UUID:[I;-860509501, -1208283527, 2073979398, 972844947],Silent:1b,view_range:0f,width:0f,height:0f,Tags:["quack.entity","quack.entity.fixed_marker"],CustomName:'{"text":"quack.entity.fixed_marker"}',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[0f,0f,0f]}}
