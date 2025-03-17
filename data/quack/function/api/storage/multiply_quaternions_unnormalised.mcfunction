@@ -1,8 +1,9 @@
 #####################################################################
-# api/storage/multiply_quaternions.mcfunction
+# api/storage/multiply_quaternions_unnormalised.mcfunction
 # written by Eroxen
 #
 # Multiplies two quaternions stored in data storage together.
+# Does not normalise the quaternion after multiplication.
 #
 # Storage input :
 # - quack:api :
@@ -26,7 +27,7 @@ execute store result score quaternion.b.y quack run data get storage quack:api q
 execute store result score quaternion.b.z quack run data get storage quack:api quaternions.b[2] 32768
 execute store result score quaternion.b.w quack run data get storage quack:api quaternions.b[3] 32768
 
-function quack:api/scoreboard/multiply_quaternions
+function quack:api/scoreboard/multiply_quaternions_unnormalised
 
 data modify storage quack:api quaternions.out set value [0f,0f,0f,0f]
 execute store result storage quack:api quaternions.out[0] float 0.00003051757812500000 run scoreboard players get quaternion.out.x quack

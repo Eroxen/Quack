@@ -111,6 +111,8 @@ data get storage quack:api euler
 ### Additional functions
 `/function quack:api/scoreboard/pitch_yaw_to_quaternion` and `/function quack:api/storage/pitch_yaw_to_quaternion` only convert the pitch and yaw of an euler angle to a quaternion. This is functionally equivalent to calling `euler_to_quaternion` with roll set to 0, but runs fewer commands.
 
+`/function quack:api/scoreboard/multiply_quaternions_unnormalised` and `/function quack:api/storage/multiply_quaternions_unnormalised` multiply the quaternions without applying normalisation to the resulting quaternion. This can be useful when your inputs are already unnormalised, but can also lead to issues if applied repeatedly, as the quaternion's norm can slowly increase/decrease due to precision errors. 
+
 `/function quack:api/storage/executing_entity_rotation_to_quaternion` converts the rotation of the entity that executed the function to a quaternion in storage. This is just a wrapper for `quack:api/storage/pitch_yaw_to_quaternion` that first copies the entity's `Rotation` to storage.
 
 ### Final note
